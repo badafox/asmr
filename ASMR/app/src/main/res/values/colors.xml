@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#2A1960</color>
+
+    <color name="TextTab">#0095d9</color>
+    <color name="BackGroundTab">#0E0E1C</color>
+    <color name="HeaderTab">#0E0E1C</color>
+    <color name="ListColor">#0E0E1C</color>
+    <!--<color name="ListColor">#FFFFFF</color>-->
+
+    <color name="ListDivider">#414141</color>
+
+
+    <color name="NavigationBackground">#60111123</color>
+    <color name="StatusBarBackground">#20111123</color>
+    <color name="MenuBackground">#90111123</color>
+
+
+    <color name="TabChoseTextColor">#FF7090</color>
+    <color name="TabTextColor">#636363</color>
+    <color name="TabIndicatorColor">#FF7090</color>
+    <color name="TabDividerColor">@android:color/transparent</color>
+
+    <color name="tab_text">#FEFEFE</color>
+
+    <color name="link_text">#60111123</color>
+
+    <color name="row_text">#0095d9</color>
+
+    <color name="card_back">#13133B</color>
+
+
+
+
+
+
+
+
+
+</resources>

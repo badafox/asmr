@@ -1,0 +1,45 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="12dp"
+    android:paddingLeft="12dp"
+    >
+    <net.nend.android.NendAdNativeMediaView
+        android:id="@+id/native_video_ad_mediaview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/native_video_ad_mediaview"
+        >
+        <TextView
+            android:id="@+id/native_video_ad_pr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            />
+        <TextView
+            android:id="@+id/native_video_ad_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/native_video_ad_pr"
+            android:layout_toLeftOf="@+id/native_video_ad_action"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            />
+        <TextView
+            android:id="@+id/native_video_ad_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/translation_button"
+            android:textColor="@android:color/white"
+            android:visibility="gone"
+            android:padding="5dp" />
+    </RelativeLayout>
+</RelativeLayout>

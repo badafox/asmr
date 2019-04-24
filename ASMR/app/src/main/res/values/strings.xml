@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name" translatable="false" >ASMR</string>
+    <!--youtube検索-->
+    <string name="youtube_word" translatable="false">ASMR</string>
+    <string name="youtube_order" translatable="false" >date</string>
+    <string name="analytics_event_category" translatable="false">ASMR</string>
+
+
+    <!--タブ名-->
+    <string-array name="tab_name">
+        <item>ASMR</item>
+        <item>Typing</item>
+        <item>Earpick</item>
+        <item>Nail Tapping</item>
+        <item>Chewing</item>
+        <item>shampoo</item>
+        <item>Cooking</item>
+        <item>rain sound</item>
+        <item>footsteps</item>
+        <item>Carbonate</item>
+        <item>kitchen knife</item>
+        <item>slime</item>
+        <item>book</item>
+        <item>Whisper</item>
+        <item>Makeup</item>
+        <item>Write a character</item>
+        <item>Card</item>
+        <item>bag</item>
+    </string-array>
+
+    <string name="search_dialog1">Order</string>
+    <string name="search_dialog2">New</string>
+    <string name="search_dialog3">Popularity</string>
+    <string name="search_dialog4">None</string>
+    <string name="search_dialog5">Free word</string>
+    <string name="search_dialog6">cancel</string>
+    <string name="search_dialog7">Search</string>
+
+    <string name="sns1">Share on SNS</string>
+    <string name="sns2">【ASMR】is an application that allows you to watch popular ASMR videos by genre🎵
+        Let\'s find the sound of healing ☺ ️ASMR seems to have a relaxing effect and sleep induction effect! Please use it by all means Click here for details http://bit.ly/2CesoZT</string>
+
+
+
+
+</resources>

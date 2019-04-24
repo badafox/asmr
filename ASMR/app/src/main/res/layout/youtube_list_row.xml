@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#162C57">
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="175dp"
+        android:layout_height="165dp"
+        android:layout_marginBottom="3dp"
+        android:layout_gravity="center_horizontal"
+        app:cardBackgroundColor="#13133B"
+        app:cardUseCompatPadding="true">
+        <RelativeLayout
+            android:id="@+id/rela_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:id="@+id/rela_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/row_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    android:adjustViewBounds="false"
+                    android:scaleType="fitXY"
+                    />
+                <TextView
+                    android:id="@+id/time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:layout_alignBottom="@id/row_image"
+                    android:layout_alignRight="@id/row_image"
+                    android:background="#9D003F"
+                    android:text="04:40"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="@android:color/white"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_below="@+id/rela_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="タイトル"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/row_text"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_above="@+id/view_count"
+                    android:id="@+id/channel_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:layout_marginRight="3dp"
+                    android:maxLines="1"
+                    android:text="ヒカキン"
+                    android:textStyle="italic"
+                    android:textColor="@color/row_text"
+                    android:textSize="10dp" />
+                <TextView
+                    android:id="@+id/view_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="3dp"
+                    android:layout_alignParentBottom="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="30View"
+                    android:textColor="@color/row_text"
+                    android:textSize="10dp"
+                    android:textStyle="italic" />
+                <TextView
+                    android:id="@+id/date_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:text="2015/11/23"
+                    android:textColor="@color/row_text"
+                    android:textSize="10dp"
+                    android:textStyle="italic" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<resources>
+    <!--タブ名-->
+    <string-array name="tab_name">
+        <item>ASMR</item>
+        <item>タイピング</item>
+        <item>耳かき</item>
+        <item>ネイルタッピング</item>
+        <item>咀嚼</item>
+        <item>シャンプー</item>
+        <item>料理</item>
+        <item>雨音</item>
+        <item>足音</item>
+        <item>炭酸</item>
+        <item>包丁</item>
+        <item>スライム</item>
+        <item>本</item>
+        <item>ささやき</item>
+        <item>メイク</item>
+        <item>文字を書く</item>
+        <item>カード</item>
+        <item>袋</item>
+        <item>アプリケーションプライバシーポリシー</item>
+    </string-array>
+
+    <string name="search_dialog1">表示順</string>
+    <string name="search_dialog2">最新</string>
+    <string name="search_dialog3">人気</string>
+    <string name="search_dialog4">特になし</string>
+    <string name="search_dialog5">フリーワード</string>
+    <string name="search_dialog6">キャンセル</string>
+    <string name="search_dialog7">検索</string>
+    <string name="sns1">SNSで共有</string>
+    <string name="sns2">【ASMR】は、大流行中のASMR動画をジャンル別に視聴できるアプリ🎵癒しの音をみつけよう☺️ASMRにはリラックス効果や、睡眠導入効果があるみたい！是非ご活用下さい⭐️…詳細はこちら http://bit.ly/2CesoZT</string>
+
+</resources>

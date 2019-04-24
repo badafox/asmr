@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/main"
+	android:layout_width="300dp"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:background="@color/HeaderTab"
+	app:theme="@style/AppTheme">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_margin="20dp"
+		>
+		<TextView
+			android:id="@+id/sort"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/TextTab"
+			android:text="@string/search_dialog1"
+			android:textSize="25dp"
+			android:layout_margin="10dp"
+			android:layout_marginBottom="10dp"
+
+			/>
+		<RadioGroup
+			android:id="@+id/group"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			>
+			<RadioButton
+				android:id="@+id/new_order"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:buttonTint="@color/TextTab"
+				android:textColor="@color/TextTab"
+				android:layout_marginBottom="10dp"
+				android:text="@string/search_dialog2"
+				android:checked="true"
+				/>
+
+			<RadioButton
+				android:id="@+id/popular_order"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:buttonTint="@color/TextTab"
+				android:textColor="@color/TextTab"
+				android:layout_marginBottom="10dp"
+				android:text="@string/search_dialog3"
+				/>
+			<RadioButton
+				android:id="@+id/no_order"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:buttonTint="@color/TextTab"
+				android:textColor="@color/TextTab"
+				android:layout_marginBottom="10dp"
+				android:text="@string/search_dialog4"
+				/>
+		</RadioGroup>
+
+		<EditText
+			android:id="@+id/editText"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="@color/TextTab"
+			android:hint="@string/search_dialog5"
+			android:textColorHint="@color/TabTextColor"
+			android:inputType="text"
+			android:imeOptions="actionSearch"
+			/>
+	</LinearLayout>
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="0.5dp"
+		android:background="@color/ListDivider"
+		/>
+
+	<RelativeLayout
+		android:layout_width="300dp"
+		android:layout_height="wrap_content"
+		>
+
+		<TextView
+			android:id="@+id/ok"
+			android:layout_margin="10dp"
+			android:layout_marginRight="10dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/search_dialog7"
+			android:textColor="@color/TextTab"
+			android:textSize="15dp"
+
+			android:layout_alignParentRight="true"
+			/>
+		<TextView
+			android:id="@+id/cancel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/search_dialog6"
+			android:textColor="@color/TextTab"
+			android:textSize="15dp"
+
+			android:layout_alignBaseline="@+id/ok"
+			android:layout_alignBottom="@+id/ok"
+			android:layout_toLeftOf="@+id/ok"
+			android:layout_toStartOf="@+id/ok"
+			android:layout_marginRight="11dp"
+			android:layout_marginEnd="11dp" />
+
+	</RelativeLayout>
+</LinearLayout>

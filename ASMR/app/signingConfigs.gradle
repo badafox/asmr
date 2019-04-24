@@ -1,0 +1,8 @@
+signingConfigs {
+    sign {
+        storeFile file("asmr.jks")
+        storePassword "XXXX"
+        keyAlias "XXXX"
+        keyPassword "XXXX"
+    }
+}

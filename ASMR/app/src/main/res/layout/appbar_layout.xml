@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawerLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    >
+<android.support.design.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="@color/HeaderTab"
+        >
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_bar_height"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/HeaderTab"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
+<!--
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+
+            scroll	             Toobarを画面外に移動させたい場合につけます
+            enterAlways	         下スクロールした時に即座にToolbarを表示します
+            enterAlwaysCollapsed 下スクロールしたときにリスト上部である場合、Toolbarを表示します。
+            exitUntilCollapsed   ToolbarにminHeightが使用されている場合は、ToolbarはminHeightの分は表示状態で残ります。
+                                 また、enterAlwaysCollapsedと同様にリスト上部に来た時点でToolbarを表示します。
+-->
+            <include
+                android:id="@+id/include_native_inflater_video"
+                layout="@layout/native_inflater_video"
+                app:layout_collapseMode="pin"
+                />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+    </FrameLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/ic_menu_black_24dp"
+        app:fabSize="normal"
+        app:layout_behavior="com.matome.asmr.view.FabAction"
+    />
+</android.support.design.widget.CoordinatorLayout>
+    <android.support.design.internal.ScrimInsetsFrameLayout
+        android:layout_gravity="start"
+        android:id="@+id/navigationView"
+        android:background="@color/MenuBackground"
+        android:layout_width="180dp"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="23dp"
+        ads:insetForeground="@android:color/transparent">
+        <ListView
+            android:id="@+id/navigation_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </android.support.design.internal.ScrimInsetsFrameLayout>
+</android.support.v4.widget.DrawerLayout>
